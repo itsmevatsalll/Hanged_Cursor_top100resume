@@ -1,0 +1,25 @@
+{
+  "Google": "product",
+  "Microsoft": "product",
+  "Amazon": "product",
+  "Meta": "product",
+  "Apple": "product",
+
+  "Flipkart": "product",
+  "PhonePe": "product",
+  "Razorpay": "product",
+  "Swiggy": "product",
+  "Zomato": "product",
+
+  "OpenAI": "research",
+  "Anthropic": "research",
+  "Scale AI": "ai",
+
+  "TCS": "service",
+  "Infosys": "service",
+  "Wipro": "service",
+  "Accenture": "service",
+  "Capgemini": "service",
+  "Cognizant": "service",
+  "Mindtree": "service"
+}

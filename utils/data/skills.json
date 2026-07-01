@@ -1,0 +1,101 @@
+{
+  "python": {
+    "aliases": ["python", "cpython"],
+    "category": "programming"
+  },
+
+  "pytorch": {
+    "aliases": ["pytorch", "torch"],
+    "category": "ml_framework"
+  },
+
+  "tensorflow": {
+    "aliases": ["tensorflow", "tf"],
+    "category": "ml_framework"
+  },
+
+  "scikit-learn": {
+    "aliases": ["scikit-learn", "sklearn"],
+    "category": "ml_framework"
+  },
+
+  "fastapi": {
+    "aliases": ["fastapi"],
+    "category": "backend"
+  },
+
+  "flask": {
+    "aliases": ["flask"],
+    "category": "backend"
+  },
+
+  "docker": {
+    "aliases": ["docker"],
+    "category": "deployment"
+  },
+
+  "kubernetes": {
+    "aliases": ["kubernetes", "k8s"],
+    "category": "deployment"
+  },
+
+  "aws": {
+    "aliases": ["aws", "amazon web services"],
+    "category": "cloud"
+  },
+
+  "gcp": {
+    "aliases": ["gcp", "google cloud"],
+    "category": "cloud"
+  },
+
+  "azure": {
+    "aliases": ["azure"],
+    "category": "cloud"
+  },
+
+  "langchain": {
+    "aliases": ["langchain"],
+    "category": "llm"
+  },
+
+  "llamaindex": {
+    "aliases": ["llamaindex"],
+    "category": "llm"
+  },
+
+  "faiss": {
+    "aliases": ["faiss"],
+    "category": "vector_db"
+  },
+
+  "milvus": {
+    "aliases": ["milvus"],
+    "category": "vector_db"
+  },
+
+  "pinecone": {
+    "aliases": ["pinecone"],
+    "category": "vector_db"
+  },
+
+  "elasticsearch": {
+    "aliases": ["elasticsearch", "elastic search", "elastic"],
+    "category": "search"
+  },
+
+  "spark": {
+    "aliases": ["spark", "apache spark", "pyspark"],
+    "category": "data_engineering"
+  },
+
+  "airflow": {
+    "aliases": ["airflow", "apache airflow"],
+    "category": "data_engineering"
+  },
+
+  "sql": {
+    "aliases": ["sql"],
+    "category": "database"
+  }
+}
