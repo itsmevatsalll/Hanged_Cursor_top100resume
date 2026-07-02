@@ -390,6 +390,8 @@ def main():
                 float(final_scores[i]),
                 4,
             ),
+            "final_score_raw": float(final_scores[i]),   # NEW: unrounded, for tiebreaking
+            
 
         })
     # REPLACE THIS:
@@ -397,12 +399,14 @@ def main():
     #     key=lambda x: x["final_score"],
     #     reverse=True,
     # )
-
-    # WITH THIS:
     ranking.sort(
-        key=lambda x: (x["final_score"], x["candidate_id"]),
-        reverse=True,
+        key=lambda x: (-x["final_score_raw"], x["candidate_id"]),
     )
+    # WITH THIS:
+    # ranking.sort(
+    #     key=lambda x: (x["final_score"], x["candidate_id"]),
+    #     reverse=True,
+    # )
     # ranking.sort(
     #     key=lambda x: x["final_score"],
     #     reverse=True,
