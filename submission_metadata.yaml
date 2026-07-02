@@ -1,0 +1,102 @@
+# Redrob Hackathon Submission Metadata
+
+This document contains the submission metadata corresponding to our solution for the **Intelligent Candidate Discovery & Ranking Challenge**.
+
+---
+
+# Team Information
+
+| Field                     | Value                      |
+|---------------------------|----------------------------|
+| **Team Name**             | Hanged_Cursor              |
+| **Primary Contact Name**  | Rishabh Gupta              |
+| **Primary Contact Email** | rishabhindia2006@gmail.com |
+| **Primary Contact Phone** | 9818233465                 |
+
+---
+
+# Repository
+
+**GitHub Repository**
+
+```
+https://github.com/itsmevatsalll/Hanged_Cursor_top100resume
+```
+
+---
+
+# Sandbox / Demo
+
+**Sandbox Link**
+
+```
+https://colab.research.google.com/drive/1zps09q2SswE_ELCGbvqafuUI9zbaBTXB?usp=sharing
+```
+
+---
+
+# AI Tools Used
+
+The following AI tools were used during the development process:
+
+- ✅ ChatGPT
+- ✅ Claude
+- ✅ Gemini
+
+These tools were used as development assistants for brainstorming, debugging, code refinement, and documentation. All architectural decisions, implementation, testing, and validation were performed by the team.
+
+---
+
+# Compute Environment
+
+| Component               | Details          |
+|-------------------------|------------------|
+| Machine                 | Apple MacBook M1 |
+| RAM                     | 8 GB             |
+| Python Version          | Python 3.11      |
+| Ranking Hardware        | CPU Only         |
+| Internet During Ranking | Disabled         |
+| External APIs           | None             |
+
+The ranking pipeline is designed to satisfy the competition constraints of CPU-only execution within the prescribed runtime.
+
+---
+
+# Team Members
+
+| Name               | Email                      |
+|--------------------|----------------------------|
+| Rishabh Gupta      | rishabhindia2006@gmail.com |
+| Vatsal Shrimal     | vatsal2829@gmail.com       |
+| Anshu Saroha       | anshusaroha370@gmail.com   |
+
+---
+
+# Methodology Summary
+
+Our system ranks candidates against the job description in two stages. A
+pre-computation stage first filters out honeypot/trap entries, extracts
+structured features (experience, skills, capabilities, recruiter and
+platform-behavior signals), and embeds both the job description and every
+candidate resume using BAAI/bge-small-en-v1.5. The time-boxed ranking
+stage then combines four signals into a single score: semantic similarity
+to the JD, capability-weighted matches derived from the JD's own text,
+normalized structured features (experience, career progression, skill
+breadth, recruiter responsiveness), and a behavioral score (recency,
+availability, notice-period fit). The top 500 candidates are then
+re-scored with a deeper, evidence-weighted capability match - favoring
+concrete evidence from career history and projects over keyword-stuffed
+skills sections - combined with a corporate-pedigree filter that
+down-weights candidates whose entire career is at outsourcing/consulting
+firms or outside the target engineering domain. The final top 100 are
+written to the submission CSV with per-candidate, fact-grounded reasoning
+strings explaining what drove their rank.
+
+
+
+# Declaration
+
+- No hosted LLM APIs were used during the ranking phase.
+- The ranking system executes entirely on CPU.
+- The pipeline is deterministic and reproducible.
+- The repository contains all code required to regenerate the submission.
